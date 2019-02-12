@@ -1,6 +1,5 @@
 def os_versions =["16","18"]
 
-def package_location = sh("readlink ../rust_aion_pipelineTest/package/aionr*")
 
 def docker_dir= "./Dockerfiles"
 
@@ -11,6 +10,7 @@ def build_step(os){
       withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:"dockerID", passwordVariables:"dockerPW")]) {
 
          stage "build image for Ubuntu ${os}"
+         def package_location = sh("readlink ../rust_aion_pipelineTest/package/aionr*")
 
          def dockerHubID = sh("echo $dockerID")
          def dockerfile = "Dockerfile${os}_04_env-with_binary"
