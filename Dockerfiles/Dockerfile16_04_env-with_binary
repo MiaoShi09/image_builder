@@ -1,0 +1,6 @@
+From chaionclibackup/ub16_aionr_no_binary:latest
+
+WORKDIR /run
+ADD ${PACKAGE_LOCATION} /run
+
+EXPOSE 30303 8545 8546 8547 8008
