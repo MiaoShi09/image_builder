@@ -22,6 +22,6 @@ def build_step(os){
  }
 }
 
-parallel os_versions.collectionEntries{
+parallel os_versions.collectEntries{
   ["echoing ${it}":build_step(it)]
 }
