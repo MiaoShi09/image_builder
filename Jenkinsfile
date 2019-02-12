@@ -8,7 +8,7 @@ def docker_dir= "./Dockerfiles"
 def build_step(os){
  return{
    node{
-      withCredentials([usernamePassword(credentialsId:'dockerHubID'),usernameVariable:"dockerID", passwordVariables:"dockerPW"]) {
+      withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:"dockerID", passwordVariables:"dockerPW")]) {
 
          stage "build image for Ubuntu ${os}"
 
