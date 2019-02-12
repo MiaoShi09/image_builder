@@ -6,7 +6,7 @@ def build_step(os){
       stage ("build image for Ubuntu ${os}"){
         withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
 
-           def package_location = sh("readlink ../rust_aion_pipelineTest/package/aionr*")
+           def package_location = sh("readlink -f ../rust_aion_pipelineTest/package/aionr*")
            echo "${package_location}"
            def dockerfile = "Dockerfile${os}_04_env-with_binary"
            echo "${dockerfile}"
