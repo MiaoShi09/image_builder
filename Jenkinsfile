@@ -5,7 +5,7 @@ def build_step(os){
    node{
       stage ("build image for Ubuntu ${os}"){
         withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
-
+           checkout scm
            def package_location = sh(returnStdout:true, script: "readlink -f ../rust_aion_pipelineTest/package/aionr*").trim()
            echo "${package_location}"
            def dockerfile = "Dockerfile${os}_04_env-with_binary"
@@ -23,4 +23,8 @@ def build_step(os){
 
 parallel os_versions.collectEntries{
   ["echoing ${it}":build_step(it)]
+}
+
+node('cleanWS'){
+  cleanWs()
 }
