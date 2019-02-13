@@ -12,9 +12,11 @@ def build_step(os){
            echo "${dockerfile}"
            def docker_dir= "Dockerfiles/"
            echo "${docker_dir}"
-           def aionrImage = docker.build("${dockerID}/ub${os}_aionr_binary:latest", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
+           docker.withRegistery('','dockerHubID'){
+             def aionrImage = docker.build("${dockerID}/ub${os}_aionr_binary:latest", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
 
-           aionrImage.push()
+             aionrImage.push()
+           }
          }
       }
    }
@@ -23,8 +25,4 @@ def build_step(os){
 
 parallel os_versions.collectEntries{
   ["echoing ${it}":build_step(it)]
-}
-
-node('cleanWS'){
-  cleanWs()
 }
