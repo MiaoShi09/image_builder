@@ -1,4 +1,4 @@
-From chaionclibackup/ub18_aionr_no_binary:latest
+From chaionclibackup/ub18_aionr_no_binary:190130
 
 WORKDIR /run
 ADD ${PACKAGE_LOCATION} /run
