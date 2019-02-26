@@ -1,35 +1,46 @@
 def os_versions =["18"]
 def aionrImage;
 
-node{
-  stage ("build image for Ubuntu 18"){
-    withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
-       checkout scm
-       def package_location = sh(returnStdout:true, script: "readlink -f ../rust_aion_pipelineTest/package/aionr*").trim()
-       echo "${package_location}"
-       def dockerfile = "Dockerfile18_04_env-with_binary"
-       echo "${dockerfile}"
-       def docker_dir= "Dockerfiles/"
-       echo "${docker_dir}"
-       docker.withRegistery('','dockerHubID'){
-         aionrImage = docker.build("${dockerID}/ub18_aionr_binary:latest", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
-       }
-     }
-  }
+def oneOsImage(){
+  return {
+      node{
+        stage ("build image for Ubuntu 18"){
+          withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
+          checkout scm
+          def package_origin = sh(returnStdout:true, script: "readlink -f ../rust_aion_pipelineTest/package/aionr*").trim()
+          echo "${package_origin}"
+          sh "cp -r ${package_origin} ./package"
+          def package_location = "./package"
+          def dockerfile = "Dockerfile${os}_04_env-with_binary"
+          echo "${dockerfile}"
+          def docker_dir= "Dockerfiles/"
+          echo "${docker_dir}"
 
-  stage ("checkout tests"){
-    sh "git clone -b refactorying https://github.com/chaion/qa-rpc.git"
-    sh "cd qa-rpc && npm install"
-  }
+          docker.withRegistry('','dockerHubID'){
+               aionrImage = docker.build("${dockerID}/ub${os}_aionr_binary:latest", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
 
-  stage ("run test"){
-    aionrImage.withRun('--network host --name image_test /bin/bash'){
-        sh "docker copy /root/.aion/keys/customer image_test:/root/.aion/keys/customer"
-        aionrImage.inside{
-          sh "./customer.sh account list"
-          sh "./customer.sh --aunthor=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137"
+
+          }
+           }
         }
-        sh "./ci_test.sh"
+
+        stage ("checkout tests"){
+          sh "git clone -b refactorying https://github.com/chaion/qa-rpc.git"
+          sh "cd qa-rpc && npm install"
+        }
+
+        stage ("run test"){
+          aionrImage.withRun('--network host --name image_test /bin/bash'){
+              sh "docker copy /root/.aion/keys/customer image_test:/root/.aion/keys/customer"
+              aionrImage.inside{
+                sh "./customer.sh account list"
+                sh "./customer.sh --aunthor=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137"
+              }
+              sh "./ci_test.sh"
+          }
+       }
     }
   }
 }
+
+oneOsImage()
