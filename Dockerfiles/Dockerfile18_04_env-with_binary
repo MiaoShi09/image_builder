@@ -6,5 +6,7 @@ WORKDIR /run
 RUN echo $PACKAGE_LOCATION
 
 ADD $PACKAGE_LOCATION /run
+CMD ["/bin/bash","./mainnet.sh"]
+
 
 EXPOSE 30303 8545 8546 8547 8008
