@@ -1,5 +1,4 @@
-def os_versions =["18"]
-def aionrImage;
+def aionrImage, kernel_version;
 
 def oneOsImage(){
 
@@ -7,7 +6,8 @@ def oneOsImage(){
         stage ("build image for Ubuntu 18"){
           withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
           checkout scm
-          def package_origin = sh(returnStdout:true, script: "readlink -f ../rust_aion_pipelineTest/package/aionr*").trim()
+          def package_origin = sh(returnStdout:true, script: "readlink -f ../AionR_release/package/aionr*").trim()
+          kernel_version = sh(returnStdout:true,script:"cd ../AionR_release/ && git describe --tags --abbrev=0").trim()
           echo "${package_origin}"
           sh "cp -r ${package_origin} ./package"
           def package_location = "./package"
@@ -17,43 +17,53 @@ def oneOsImage(){
           echo "${docker_dir}"
 
           docker.withRegistry('','dockerHubID'){
-               aionrImage = docker.build("${dockerID}/ub18_aionr_binary:latest", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
+               aionrImage = docker.build("${dockerID}/ub18_aionr_binary:${kernel_version}", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
 
-
-          }
+               }
            }
         }
 
         stage ("checkout tests"){
+          sh 'rm -r qa-rpc || echo "no qa-rpc"'
           sh "git clone -b refactoring https://github.com/chaion/qa-rpc.git"
           sh "cd qa-rpc && npm install"
         }
 
         stage ("run test"){
           aionrImage.withRun('--network host --name image_test -v /root/.aion/keys/custom:/root/.aion/keys/custom','/bin/bash ./custom.sh --author=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137'){ c ->
-             // echo "docker cp /root/.aion/keys/custom image_test:/root/.aion/keys/custom"
-             // sh "docker cp /root/.aion/keys/custom image_test:/root/.aion/keys/custom"
 
 
-              echo '$pwd'
               sh "cd qa-rpc && ls"
-              sh "ls"
               sh "./scripts/test.sh"
-              echo '$?'
           }
        }
        stage ("save test result"){
-
+          sh "ls"
           docker.withRegistry('','dockerHubID'){
-            aionrImage.push("ci-test")
+            aionrImage.push("${kernel_version}")
           }
+          junit 'qa-rpc/testReport/*'
+          archiveArtifacts artifacts: 'qa-rpc/testReport/*.xml,qa-rpc/testlog/*.txt',fingerprint:true
+          sh 'rm -r qa-rpc'
 
-          junit "./qa-rpc/testReport/*"
-          archiveArtifacts artifacts: './qa-rpc/testReport/*',fingerprint:true
-          cleanWs()
+          slackSend channel: '@Miao',
+                      color: 'good',
+                      message: "${currentBuild.fullDisplayName} completed successfully. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/ \nCommit: ${GIT_COMMIT}"
        }
     }
-
 }
 
-oneOsImage()
+try{
+    oneOsImage()
+} catch(caughtError){
+    node{
+        echo "${caughtError}"
+        junit 'qa-rpc/testReport/*'
+        archiveArtifacts artifacts: 'qa-rpc/testReport/*.xml,qa-rpc/testlog/*.txt',fingerprint:true
+        sh 'rm -r qa-rpc'
+        slackSend channel: '@Miao',
+                    color: 'danger',
+                    message: "${currentBuild.fullDisplayName} failed. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/ \nCommit: ${GIT_COMMIT}"
+
+    }
+}
