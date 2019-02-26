@@ -39,7 +39,7 @@ def oneOsImage(){
               sh "cd qa-rpc && ls"
               sh "ls"
               sh "./scripts/test.sh"
-              echo "$?"
+              echo '$?'
           }
        }
        stage ("save test result"){
@@ -47,6 +47,7 @@ def oneOsImage(){
           docker.withRegistry('','dockerHubID'){
             aionrImage.push("ci-test")
           }
+
           junit "./qa-rpc/testReport/*"
           archiveArtifacts artifacts: './qa-rpc/testReport/*',fingerprint:true
           cleanWs()
