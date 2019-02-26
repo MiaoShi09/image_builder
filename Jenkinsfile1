@@ -30,19 +30,26 @@ def oneOsImage(){
         }
 
         stage ("run test"){
-          aionrImage.withRun('--network host --name image_test'){
-              echo "docker cp /root/.aion/keys/custom image_test:/root/.aion/keys/custom"
-              sh "docker cp /root/.aion/keys/custom image_test:/root/.aion/keys/custom"
+          aionrImage.withRun('--network host --name image_test -v /root/.aion/keys/custom:/root/.aion/keys/custom','/bin/bash ./custom.sh --author=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137'){ c ->
+             // echo "docker cp /root/.aion/keys/custom image_test:/root/.aion/keys/custom"
+             // sh "docker cp /root/.aion/keys/custom image_test:/root/.aion/keys/custom"
 
-              aionrImage.inside{
-                echo "./customer.sh account list"
-                sh "./customer.sh account list"
-                echo "./customer.sh --aunthor=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137"
-                sh "./customer.sh --aunthor=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137"
-              }
-              echo "./ci_test.sh"
-              sh "./ci_test.sh"
+
+              echo '$pwd'
+              sh "cd qa-rpc && ls"
+              sh "ls"
+              sh "./scripts/test.sh"
+              echo "$?"
           }
+       }
+       stage ("save test result"){
+
+          docker.withRegistry('','dockerHubID'){
+            aionrImage.push("ci-test")
+          }
+          junit "./qa-rpc/testReport/*"
+          archiveArtifacts artifacts: './qa-rpc/testReport/*',fingerprint:true
+          cleanWs()
        }
     }
 
