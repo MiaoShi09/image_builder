@@ -48,7 +48,7 @@ def oneOsImage(){
 
           slackSend channel: '@Miao',
                       color: 'good',
-                      message: "${currentBuild.fullDisplayName} completed successfully. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/ \nCommit: ${GIT_COMMIT}"
+                      message: "${currentBuild.fullDisplayName} completed successfully. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/"
        }
     }
 }
@@ -63,7 +63,7 @@ try{
         sh 'rm -r qa-rpc'
         slackSend channel: '@Miao',
                     color: 'danger',
-                    message: "${currentBuild.fullDisplayName} failed. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/ \nCommit: ${GIT_COMMIT}"
+                    message: "${currentBuild.fullDisplayName} failed. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/"
 
     }
 }
