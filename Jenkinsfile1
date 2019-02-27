@@ -1,4 +1,4 @@
-def aionrImage, kernel_version;
+def aionrImage;
 
 def oneOsImage(){
 
@@ -7,7 +7,7 @@ def oneOsImage(){
           withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
           checkout scm
           def package_origin = sh(returnStdout:true, script: "readlink -f ../AionR_release/package/aionr*").trim()
-          kernel_version = sh(returnStdout:true,script:"cd ../AionR_release/ && git describe --tags --abbrev=0").trim()
+        //  kernel_version = sh(returnStdout:true,script:"cd ../AionR_release/ && git describe --tags --abbrev=0").trim()
           echo "${package_origin}"
           sh "cp -r ${package_origin} ./package"
           def package_location = "./package"
@@ -30,7 +30,7 @@ def oneOsImage(){
         }
 
         stage ("run test"){
-          aionrImage.withRun('--network host --name image_test -v /root/.aion/keys/custom:/root/.aion/keys/custom','/bin/bash ./custom.sh --author=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137'){ c ->
+          aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./custom.sh --author=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137'){ c ->
 
 
               sh "cd qa-rpc && ls"
