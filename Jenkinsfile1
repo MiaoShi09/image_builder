@@ -17,10 +17,10 @@ def oneOsImage(){
           echo "${dockerfile}"
           def docker_dir= "Dockerfiles/"
           echo "${docker_dir}"
-          image_name = "${dockerID}/${repoName}:${params.kernel_version}"
+          image_name = "${dockerID}/${repoName}"
           docker.withRegistry('','dockerHubID'){
                aionrImage = docker.build("${image_name}", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
-               image_hash= sh()
+               image_hash= sh(returnStdout:true,script:"docker inspect -f '{{ .Id}}' ${image_name} | cut -c 8-19").trim();
                }
            }
         }
@@ -56,7 +56,7 @@ def oneOsImage(){
        stage ("save test result"){
           sh "ls"
           docker.withRegistry('','dockerHubID'){
-            aionrImage.push("${params.kernel_version}")
+            docker.image("${image_hash}").push("${params.kernel_version}")
           }
           junit 'qa-rpc/testReport/*'
           archiveArtifacts artifacts: 'qa-rpc/testReport/*.xml,qa-rpc/testlog/*.txt',fingerprint:true
