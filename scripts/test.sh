@@ -2,8 +2,8 @@
 
 node --version
 
-cd qa-rpc
+cd ../../chaion_qa
 file=("smoke-test","AMO","TXTC","FTTC","bugs","precompile")
-type=("http","websocket")
+type=(http,websocket)
 
-./ci_test_flexible.sh "${file[@]}" "${type[@]}" true
+./ci_test_flexible.sh "${file[@]}" "${type[@]}" false
