@@ -46,9 +46,19 @@ docker build --file <DockerfileName> --build-arg PACKAGE_LOCATION=<new built Aio
 Prerequisite: Docker
 
 ### Deploy Images
-Get the image:
+#### Get the image:
 1) Use the dockerfile, check [Manual Build Image](#manual-build-image)
 2) Pull from Docker Hub:
 ```bash
 docker pull aionnetworkdocker/aionr:0.1.1
+```
+
+#### Run Docker Container
+```bash
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 aionnetworkdocker/aionr:0.1.1
+```
+
+* Run container with custom/mastery network
+```bash
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 aionnetworkdocker/aionr:0.1.1 ./mastery.sh
 ```

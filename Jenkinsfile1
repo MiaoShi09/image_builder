@@ -10,7 +10,7 @@ def image_name(){
 def oneOsImage(){
 
       node{
-        repoName='aionr'
+        def image_name = image_name()
         stage ("build image for Ubuntu 18"){
           checkout scm
           def package_origin = sh(returnStdout:true, script: "readlink -f ../AionR_release/package/aionr*").trim()
@@ -22,7 +22,7 @@ def oneOsImage(){
           echo "${dockerfile}"
           def docker_dir= "Dockerfiles/"
           echo "${docker_dir}"
-          def image_name = image_name()
+
           docker.withRegistry('','dockerHubID'){
                aionrImage = docker.build("${image_name}", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
                image_hash= sh(returnStdout:true,script:"docker inspect -f '{{ .Id}}' ${image_name} | cut -c 8-19").trim();
@@ -48,7 +48,7 @@ def oneOsImage(){
        stage ("save test result"){
           sh "ls"
           docker.withRegistry('','dockerHubID'){
-            docker.image("${image_hash}").push("${params.kernel_version}")
+            docker.image("${image_hash}").tag("${image_name}:${params.kernel_version}").push()
           }
           junit 'qa-rpc/testReport/*'
           archiveArtifacts artifacts: 'qa-rpc/testReport/*.xml,qa-rpc/testlog/*.txt',fingerprint:true
