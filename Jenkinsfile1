@@ -1,4 +1,4 @@
-def aionrImage, image_name;
+def aionrImage, image_name,image_hash;
 def repoName="aionr";
 
 def oneOsImage(){
@@ -19,7 +19,7 @@ def oneOsImage(){
           image_name = "${dockerID}/${repoName}:${params.kernel_version}"
           docker.withRegistry('','dockerHubID'){
                aionrImage = docker.build("${image_name}", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
-
+               image_hash= sh()
                }
            }
         }
@@ -47,7 +47,7 @@ def oneOsImage(){
           aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./mastery.sh'){ c ->
               dir("qa-rpc"){
                   sh "./node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml"
-                  sh "./node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml"                  
+                  sh "./node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml"
               }
           }
 
