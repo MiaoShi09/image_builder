@@ -1,9 +1,10 @@
 def aionrImage, image_name,image_hash;
-def repoName="aionr";
+def repoName;
 
 def oneOsImage(){
 
       node{
+        repoName='aionr'
         stage ("build image for Ubuntu 18"){
           withCredentials([usernamePassword(credentialsId:'dockerHubID',usernameVariable:'dockerID', passwordVariable:'dockerPW')]) {
           checkout scm
