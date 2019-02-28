@@ -2,7 +2,7 @@
 
 node --version
 
-cd rpc_qa
+cd qa-rpc
 file=("smoke-test","AMO","TXTC","FTTC","bugs","precompile")
 type=(http,websocket)
 
