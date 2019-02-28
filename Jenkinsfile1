@@ -1,4 +1,5 @@
-def aionrImage;
+def aionrImage, image_name;
+def repoName="aionr";
 
 def oneOsImage(){
 
@@ -15,9 +16,9 @@ def oneOsImage(){
           echo "${dockerfile}"
           def docker_dir= "Dockerfiles/"
           echo "${docker_dir}"
-
+          image_name = "${dockerID}/${repoName}:${params.kernel_version}"
           docker.withRegistry('','dockerHubID'){
-               aionrImage = docker.build("${dockerID}/ub18_aionr_binary:${params.kernel_version}", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
+               aionrImage = docker.build("${image_name}", "-f ${docker_dir}${dockerfile} --build-arg PACKAGE_LOCATION=${package_location} .")
 
                }
            }
@@ -36,6 +37,20 @@ def oneOsImage(){
               sh "cd qa-rpc && ls"
               sh "./scripts/test.sh"
           }
+
+          aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./mainnet.sh'){ c ->
+              dir("qa-rpc"){
+                  sh "./node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml"
+                  sh "./node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml"
+              }
+          }
+          aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./mastery.sh'){ c ->
+              dir("qa-rpc"){
+                  sh "./node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml"
+                  sh "./node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml"                  
+              }
+          }
+
        }
        stage ("save test result"){
           sh "ls"
@@ -55,7 +70,7 @@ def oneOsImage(){
 
 try{
     oneOsImage()
-} catch(caughtError){
+} catch (caughtError) {
     node{
         echo "${caughtError}"
         junit 'qa-rpc/testReport/*'
@@ -66,4 +81,10 @@ try{
                     message: "${currentBuild.fullDisplayName} failed. Grab the generated builds at ${env.BUILD_URL}\nArtifacts: ${env.BUILD_URL}artifact/\n Check rpc result: ${env.BUILD_URL}testReport/(root)/"
 
     }
+} finally {
+  node{
+    stage ( "clean images" ){
+      sh "docker rmi ${image_name}"
+    }
+  }
 }
