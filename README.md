@@ -21,7 +21,9 @@
   * 8008 (Stratum)
 
 ## Manual Build Image
-
+* Download the [executiable package](https://github.com/aionnetwork/aionr/releases)
+* Or Build from [Source Code](https://github.com/aionnetwork/aionr)
+* Then put the package folder in this repo
 ```
 docker build --file <DockerfileName> --build-arg PACKAGE_LOCATION=<new built AionR package Location> -t <imageRepo:tag> .
 ```
@@ -41,4 +43,12 @@ docker build --file <DockerfileName> --build-arg PACKAGE_LOCATION=<new built Aio
 
 
 ## Use Image
+Prerequisite: Docker
+
 ### Deploy Images
+Get the image:
+1) Use the dockerfile, check [Manual Build Image](#manual-build-image)
+2) Pull from Docker Hub:
+```bash
+docker pull aionnetworkdocker/aionr:0.1.1
+```

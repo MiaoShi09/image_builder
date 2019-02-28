@@ -1,12 +1,14 @@
 FROM ubuntu:18.04
 ARG PACKAGE_LOCATION
-WORKDIR /run
+
 
 RUN apt update \
     && apt install -y g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev llvm-4.0-dev wget lbzip2 cmake libboost-all-dev \
-    && echo $PACKAGE_LOCATION
+    && echo $PACKAGE_LOCATION \
+    && mkdir aionr
 
-ADD $PACKAGE_LOCATION /run
+WORKDIR /aionr
+ADD $PACKAGE_LOCATION /aionr
 CMD ["/bin/bash","./mainnet.sh"]
 
 EXPOSE 30303 8545 8546 8547 8008
