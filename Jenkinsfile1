@@ -40,14 +40,14 @@ def oneOsImage(){
 
           aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./mainnet.sh'){ c ->
               dir("qa-rpc"){
-                  sh "./node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml"
-                  sh "./node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml"
+                  sh './node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml'
+                  sh './node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml'
               }
           }
           aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./mastery.sh'){ c ->
               dir("qa-rpc"){
-                  sh "./node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml"
-                  sh "./node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml"
+                  sh './node_modules/mocha/bin/mocha testApp.js --type http --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/http-syncing_testcases-$(date +%y%m%d%H%M).xml'
+                  sh './node_modules/mocha/bin/mocha testApp.js --type websocket --testsuite test_cases/syncing_testcases.tsv --no-timeouts --reporter mocha-junit-reporter --reporter-options mochaFile=testReport/websocket-syncing_testcases-$(date +%y%m%d%H%M).xml'
               }
           }
 
