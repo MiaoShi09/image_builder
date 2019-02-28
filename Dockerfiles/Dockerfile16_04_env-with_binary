@@ -1,9 +1,9 @@
 FROM chaionclibackup/ub16_aionr_no_binary:190212
 ARG PACKAGE_LOCATION
 
-WORKDIR /run
+WORKDIR /aion
 RUN echo $PACKAGE_LOCATION
-ADD $PACKAGE_LOCATION /run
+ADD $PACKAGE_LOCATION /aion
 
 CMD ["/bin/bash","./mainnet.sh"]
 
