@@ -37,9 +37,7 @@ def oneOsImage(){
         }
 
         stage ("run test"){
-          aionrImage.withRun('--network host --name image_test -v /root/.aion:/root/.aion','/bin/bash ./custom.sh --author=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137'){ c ->
-
-
+          aionrImage.withRun('--network host --name image_test --mount src:/root/.aion,dst:/root/.aion','./custom.sh --author=0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137'){ c ->
               sh "cd qa-rpc && ls"
               sh "./scripts/test.sh"
           }
@@ -48,7 +46,8 @@ def oneOsImage(){
        stage ("save test result"){
           sh "ls"
           docker.withRegistry('','dockerHubID'){
-            docker.image("${image_hash}").tag("${image_name}:${params.kernel_version}").push()
+            sh "docker tag ${image_hash} ${image_name}:${tag}"
+            sh "docker push ${image_name}:${tag}"
           }
           junit 'qa-rpc/testReport/*'
           archiveArtifacts artifacts: 'qa-rpc/testReport/*.xml,qa-rpc/testlog/*.txt',fingerprint:true

@@ -10,7 +10,7 @@
 * A shell script to trigger the testing
 
 ## Image Info
-* The work directory of docker images is /run
+* The work directory of docker images is /aionr
 * The runing data is located at /root/.aion
 * Default Command is launching AionR to connect to Mainnet
 * Expose Ports:
