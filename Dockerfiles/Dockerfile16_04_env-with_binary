@@ -18,6 +18,7 @@ RUN apt update \
 
 ADD $PACKAGE_LOCATION /aion
 
-CMD ["/bin/bash","./mainnet.sh"]
+ENTRYPOINT ["/bin/bash"]
+CMD ["./mainnet.sh"]
 
 EXPOSE 30303 8545 8546 8547 8008

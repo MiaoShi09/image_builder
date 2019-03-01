@@ -10,8 +10,8 @@
 * A shell script to trigger the testing
 
 ## Image Info
-* The work directory of docker images is /aionr
-* The runing data is located at /root/.aion
+* The work directory of docker images is /aionr. The structure is the same as [the executable package](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-aionr-kernel)
+* The runing data is located at /root/.aion. Mounting a volume or binding a host space to this directory is recommended.
 * Default Command is launching AionR to connect to Mainnet
 * Expose Ports:
   * 30303 (P2P)
@@ -62,3 +62,36 @@ docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 ai
 ```bash
 docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 aionnetworkdocker/aionr:0.1.1 ./mastery.sh
 ```
+
+* To mount a volume or host directory to the Container
+
+```bash
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 --mount src=/host/dir/path/or/volumn/name,dst=/container/dir/path aionnetworkdocker/aionr:0.1.1
+```
+For example:
+  1. create a volume and mount it with aionr data directory:
+```bash
+docker create volume aionrdata
+
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 --mount type=volume,src=aionrdata,dst=/root/.aion aionnetworkdocker/aionr:0.1.1
+```
+
+  2. bind a host directory with aionr data directory:
+```bash
+# /host/location must be existed
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 --mount type=bind,src=/host/location,dst=/root/.aion aionnetworkdocker/aionr:0.1.1
+
+# Or /host/location does not have to be existed
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 -v /host/location:/root/.aion aionnetworkdocker/aionr:0.1.1
+
+```
+To check the structure of `/root/.aion`, go [AionR Wiki page](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-aionr-kernel-with-a-specific-chain)
+
+#### Configure Kernel
+After the container is running, users can edit the configuration of each network through `docker exec`
+
+```bash
+docker exec -it <container_name or hash> /bin/bash
+```
+
+Then edit `[NETWORK]\[NETWORK].toml`

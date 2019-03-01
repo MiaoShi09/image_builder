@@ -16,6 +16,7 @@ def oneOsImage(){
           def package_origin = sh(returnStdout:true, script: "readlink -f ../AionR_release/package/aionr*").trim()
         //  kernel_version = sh(returnStdout:true,script:"cd ../AionR_release/ && git describe --tags --abbrev=0").trim()
           echo "${package_origin}"
+          sh "rm -r package || echo 'no package folder'"
           sh "cp -r ${package_origin} ./package"
           def package_location = "./package"
           def dockerfile = "Dockerfile18_04_env-with_binary"
