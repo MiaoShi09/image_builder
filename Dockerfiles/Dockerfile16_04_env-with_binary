@@ -1,10 +1,10 @@
 From ubuntu:16.04
-WORKDIR /aion
 ARG PACKAGE_LOCATION
 
 RUN apt update \
     && apt install -y g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev llvm-4.0-dev wget lbzip2 cmake \
-    && cd /run \
+    && mkdir /aionr \
+    && cd /aionr \
     && wget https://dl.bintray.com/boostorg/release/1.65.1/source/boost_1_65_1.tar.bz2 \
     && tar xf boost_1_65_1.tar.bz2 \
     && cd boost_1_65_1 \
@@ -12,12 +12,10 @@ RUN apt update \
     && ./b2 \
     && ./b2 install \
     && cd ..\
-    && rm -r boost_1_65_1 \
-    && echo $PACKAGE_LOCATION
+    && rm -r boost_1_65_1 
 
-
-ADD $PACKAGE_LOCATION /aion
-
+ADD $PACKAGE_LOCATION /aionr
+WORKDIR /aionr
 ENTRYPOINT ["/bin/bash"]
 CMD ["./mainnet.sh"]
 

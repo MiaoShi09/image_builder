@@ -88,6 +88,7 @@ docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 -v
 To check the structure of `/root/.aion`, go [AionR Wiki page](https://github.com/aionnetwork/aionr/wiki/User-Manual#launch-aionr-kernel-with-a-specific-chain)
 
 #### Configure Kernel
+##### configure Kernel in the docker container
 After the container is running, users can edit the configuration of each network through `docker exec`
 
 ```bash
@@ -95,3 +96,34 @@ docker exec -it <container_name or hash> /bin/bash
 ```
 
 Then edit `[NETWORK]\[NETWORK].toml`
+
+##### configure Kernel in the host
+In some cases, users want to use the configuration and genesis file in the host. Users can mount a host directory that **contains** `[NETWORK].toml` and `[NETWORK].json`.
+```bash
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 \
+--mount type=bind,src=/host/db,dst=/root/.aion \
+--mount type=bind,src=/host/mainnet,dst=/aionr/mainnet \
+aionnetworkdocker/aionr:0.1.1
+```
+
+If there is no configuration file and genesis file in the host,
+1. use `docker cp` to get the default configurations and genesis files from the docker container:
+```bash
+# 1. launch a container using aionnetworkdocker/aionr:0.1.1
+docker run -d --name aionr aionnetworkdocker/aionr:0.1.1
+# 2. cp the folders to the host
+docker cp aionr:/aionr/mainnet /host/mainnet/directory
+docker cp aionr:/aionr/mastery /host/mastery/directory
+docker cp aionr:/aionr/custom /host/custom/directory
+# 3. stop and remove the container
+docker stop aionr
+docker rm aionr
+# 4. edit configuration on the host and launch the container again
+docker run -p 30303:30303 -p 8545:8545 -p 8546:8546 -p 8547:8547 -p 8008:8008 \
+--mount type=bind,src=/host/db,dst=/root/.aion \
+--mount type=bind,src=/host/mainnet/directory,dst=/aionr/mainnet \
+aionnetworkdocker/aionr:0.1.1
+
+```
+
+2. Get the configurations in the executive package on [Github](https://github.com/aionnetwork/aionr/releases)
