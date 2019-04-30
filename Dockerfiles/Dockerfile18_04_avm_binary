@@ -1,0 +1,18 @@
+FROM ubuntu:18.04
+
+
+RUN apt-get update \
+    && apt install -y g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev llvm-4.0-dev wget lbzip2 cmake libboost-all-dev \
+    && mkdir /aionr /run/libs
+
+WORKDIR /aionr
+
+ADD libs  /run/libs
+ADD executive/aionr /aionr
+
+ENV JAVA_HOME="/run/libs/jdk-11.0.1"
+ENV LIBRARY_PATH="${JAVA_HOME}/lib/server"
+ENV LD_LIBRARY_PATH="${LIBRARY_PATH}:/usr/local/lib:/run/libs" PATH="${PATH}:/root/.cargo/bin:${JAVA_HOME}/bin"
+
+
+EXPOSE 30303 8545 8546 8547 8008
