@@ -12,7 +12,7 @@ containers:
       9001: 8545
 
   nRust:
-   image: aionnetwork/aionr:Latest
+   image: blockade/aionr:latest
    command: "./custom.sh --base-path=custom/base --log-file=custom/log.log"
    volumes:
      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node1": "/aionr/custom"
