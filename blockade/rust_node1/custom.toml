@@ -2,7 +2,7 @@
 chain = "custom/custom.json"
 
 [account]
-fast_unlock = false
+
 keys_iterations = 10240
 refresh_time = 5
 unlock = []
@@ -22,7 +22,7 @@ ip_black_list = []
 disable = false
 port = 8545
 interface = "local"
-apis = ["all", "-pubsub"]
+apis = ["all"]
 hosts = ["none"]
 cors = ["none"]
 
@@ -30,7 +30,7 @@ cors = ["none"]
 disable = false
 port = 8546
 interface = "local"
-apis = ["all", "-pubsub"]
+apis = ["all"]
 origins = ["none"]
 hosts = ["none"]
 max_connections = 100
@@ -38,7 +38,7 @@ max_connections = 100
 [ipc]
 disable = false
 path = "$BASE/jsonrpc.ipc"
-apis = ["all", "-pubsub"]
+apis = ["all"]
 
 [wallet]
 disable = true
@@ -56,9 +56,9 @@ force_sealing = false
 remove_solved = false
 infinite_pending_block = false
 dynamic_gas_price = false
-reseal_on_txs = "own"
+
 reseal_min_period = 4000
-reseal_max_period = 120000
+
 work_queue_size = 20
 relay_set = "cheap"
 gas_floor_target = "15000000"
