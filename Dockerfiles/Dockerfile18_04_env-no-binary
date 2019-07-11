@@ -1,4 +1,0 @@
-FROM ubuntu:18.04
-
-RUN apt update \
-    && apt install -y g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev llvm-4.0-dev wget lbzip2 cmake libboost-all-dev
