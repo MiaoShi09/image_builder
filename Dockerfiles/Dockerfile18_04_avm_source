@@ -9,9 +9,9 @@ WORKDIR /aionr
 
 ADD libs  /run/libs
 
-ENV JAVA_HOME="/run/libs/jdk-11.0.1"
+ENV JAVA_HOME="/run/libs/jdk-12.0.1"
 ENV LIBRARY_PATH="${JAVA_HOME}/lib/server"
-ENV LD_LIBRARY_PATH="${LIBRARY_PATH}:/usr/local/lib:/run/libs" PATH="${PATH}:/root/.cargo/bin:${JAVA_HOME}/bin"
+ENV LD_LIBRARY_PATH="${LIBRARY_PATH}:/usr/local/lib" PATH="${PATH}:/root/.cargo/bin:${JAVA_HOME}/bin"
 
 
 EXPOSE 30303 8545 8546 8547 8008

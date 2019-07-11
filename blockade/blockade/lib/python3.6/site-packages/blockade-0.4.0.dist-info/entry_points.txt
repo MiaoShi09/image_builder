@@ -1,0 +1,3 @@
+[console_scripts]
+blockade = blockade.cli:main
+
