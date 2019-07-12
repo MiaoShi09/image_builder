@@ -9,6 +9,11 @@ libs=(
  "libboost_system.so.1.65.1"
  "libLLVM-4.0.so.1"
  "libedit.so.2"
+## libraries need to be removed after merging with rf branch 190712
+# "libzmq.so.5"
+# "libsodium.so.23"
+# "libpgm-5.2.so.0"
+# "libnorm.so.1"
  )
 
 mkdir executive || echo "executive folder exist"
