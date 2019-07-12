@@ -3,13 +3,13 @@ ARG PACKAGE_LOCATION
 
 
 RUN apt update \
-    && apt install -y g++ gcc libzmq3-dev libjsoncpp-dev python-dev libudev-dev llvm-4.0-dev wget lbzip2 cmake libboost-all-dev \
-    && echo $PACKAGE_LOCATION \
-    && mkdir aionr
+   && echo $PACKAGE_LOCATION \
+   && mkdir aionr
 
 WORKDIR /aionr
 ADD $PACKAGE_LOCATION /aionr
-ADD libs/jdk-11.0.1 /run/libs/jdk-11.0.1
+ADD libs /run/libs
+
 
 ENV JAVA_HOME="/run/libs/jdk-11.0.1"
 ENV LIBRARY_PATH="${JAVA_HOME}/lib/server"
