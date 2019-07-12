@@ -1,19 +1,52 @@
 containers:
-  n1:
-    image: aionnetwork/aion:Latest
+  j1:
+    image: aionnetwork/aion:latest
     #image: aionnetwork/aion:0.4.0.1-e8d3c4390
     command: "./aion.sh -n custom"
     volumes:
-      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/node1": "/aion/custom"
-      #e.g. "/home/jay/workspace/release/aion/blockade/node1": "/aion/custom"
+      "/home/aion/miao_ws/temp/blockade_unity/node1": "/aion/custom"
     expose: [30303, 8545]
     ports:
       3001: 30303
       9001: 8545
 
-  nRust:
+  j2:
+    image: aionnetwork/aion:latest
+    #image: aionnetwork/aion:0.4.0.1-e8d3c4390
+    command: "./aion.sh -n custom"
+    volumes:
+      "/home/aion/miao_ws/temp/blockade_unity/node2": "/aion/custom"
+    expose: [30303, 8545]
+    ports:
+      3002: 30303
+      9002: 8545
+
+#  n3:
+#    image: aionnetwork/aion:latest
+    #image: aionnetwork/aion:0.4.0.1-e8d3c4390
+#    command: "'./aion.sh' '-n custom'"
+#    volumes:
+#      "/home/aion/unity_test/blockade/node3": "/aion/custom"
+#    expose: [30303, 8545]
+#    ports:
+#      3003: 30303
+#      9003: 8545
+
+#  n4:
+#    image: aionnetwork/aion:latest
+    #image: aionnetwork/aion:0.4.0.1-e8d3c4390
+#    command: "./aion.sh -n custom"
+#    volumes:
+#      "/home/aion/unity_test/blockade/node4": "/aion/custom"
+#    expose: [30303, 8545]
+#    ports:
+#      3004: 30303
+#      9004: 8545
+
+# aion rust unity kernel settings
+  r1:
    image: blockade/aionr:latest
-   command: "./custom.sh --base-path=custom/base --log-file=custom/log.log"
+   command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node1": "/aionr/custom"
    expose: [30303, 8545, 8008]
@@ -21,6 +54,7 @@ containers:
      3005: 30303
      8001: 8008
      9005: 8545
+
 
 #network:
 #  flaky: 30%
