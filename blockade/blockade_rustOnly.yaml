@@ -27,7 +27,7 @@ containers:
    image: blockade/aionr:latest
    command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
-     "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node_staking": "/aionr/custom"
+     "./rust_node_staking": "/aionr/custom"
    expose: [30303, 8545, 8008]
    ports:
      3001: 30303
@@ -36,7 +36,7 @@ containers:
    image: blockade/aionr:latest
    command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
-     "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node4": "/aionr/custom"
+     "./rust_node4": "/aionr/custom"
    expose: [30303, 8545, 8008]
    ports:
      3002: 30303
@@ -46,7 +46,7 @@ containers:
    image: blockade/aionr:latest
    command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
-     "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node1": "/aionr/custom"
+     "./rust_node1": "/aionr/custom"
    expose: [30303, 8545, 8008]
    ports:
      3005: 30303
@@ -55,7 +55,7 @@ containers:
    image: blockade/aionr:latest
    command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
-     "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node2": "/aionr/custom"
+     "./rust_node2": "/aionr/custom"
    expose: [30303, 8545, 8008]
    ports:
      3006: 30303
