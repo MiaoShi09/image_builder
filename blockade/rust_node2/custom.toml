@@ -11,11 +11,11 @@ password = []
 sync_from_boot_nodes_only = false
 max_peers = 128
 net_id = 0
-local_node = "p2p://88888888-e35f-4cf9-9234-65cea7558aa4@0.0.0.0:30303"
+local_node = "p2p://99999999-e35f-4cf9-9234-65cea7558aa4@0.0.0.0:30303"
 boot_nodes = [
 	"p2p://55555555-e35f-4cf9-9234-65cea7558aa4@172.17.0.2:30303",
 	"p2p://66666666-e35f-4cf9-9234-65cea7558aa4@172.17.0.3:30303",
-	"p2p://99999999-e35f-4cf9-9234-65cea7558aa4@172.17.0.5:30303"
+	"p2p://88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303"
 ]
 ip_black_list = []
 

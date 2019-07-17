@@ -4,7 +4,7 @@ containers:
     #image: aionnetwork/aion:0.4.0.1-e8d3c4390
     command: "./aion.sh -n custom"
     volumes:
-      "/home/aion/miao_ws/temp/blockade_unity/node1": "/aion/custom"
+      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/node1": "/aion/custom"
     expose: [30303, 8545]
     ports:
       3001: 30303
@@ -15,7 +15,7 @@ containers:
     #image: aionnetwork/aion:0.4.0.1-e8d3c4390
     command: "./aion.sh -n custom"
     volumes:
-      "/home/aion/miao_ws/temp/blockade_unity/node2": "/aion/custom"
+      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/node2": "/aion/custom"
     expose: [30303, 8545]
     ports:
       3002: 30303
@@ -52,8 +52,16 @@ containers:
    expose: [30303, 8545, 8008]
    ports:
      3005: 30303
-     8001: 8008
      9005: 8545
+  r2:
+   image: blockade/aionr:latest
+   command: "./custom.sh --base-path=custom/base --log-file=custom/log"
+   volumes:
+     "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node2": "/aionr/custom"
+   expose: [30303, 8545, 8008]
+   ports:
+     3006: 30303
+     9006: 8545
 
 
 #network:

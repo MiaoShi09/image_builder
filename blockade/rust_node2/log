@@ -1,0 +1,649 @@
+2019-07-16 06:58:30 
+             _____    ____    _   _ 
+     /\     |_   _|  / __ \  | \ | |
+    /  \      | |   | |  | | |  \| |
+   / /\ \     | |   | |  | | | . ` |
+  / ____ \   _| |_  | |__| | | |\  |
+ /_/    \_\ |_____|  \____/  |_| \_|
+
+
+2019-07-16 06:58:30        build: Aion(R)/v0.2.5.3ecad29/x86_64-linux-gnu/rustc-1.28.0
+2019-07-16 06:58:30  config path: /aionr/custom/custom.toml
+2019-07-16 06:58:30 genesis path: /aionr/custom/custom.json
+2019-07-16 06:58:30    keys path: /aionr/custom/base/keys/custom
+2019-07-16 06:58:30      db path: /aionr/custom/base/chains/custom/db/1944fa7f79f71d6b
+2019-07-16 06:58:30      network: Custom
+2019-07-16 06:58:30      genesis: c4aab0087a5ac8b6f8de7670e8f8562ab4f2ba061944fa7f79f71d6b0930966c
+2019-07-16 06:58:30     state db: archive
+2019-07-16 06:58:30         apis: rpc-http(enable) rpc-ws(enable) rpc-ipc(enable)
+2019-07-16 06:58:30         node: 99999999-e35f-4cf9-9234-65cea7558aa4@0.0.0.0:30303
+2019-07-16 06:58:35 
+2019-07-16 06:58:35 ======================================================== Sync Statics =========================================================
+2019-07-16 06:58:35 Best block number: 0, hash: c4aa…966c
+2019-07-16 06:58:35 Network Best block number: 0, hash: 0000…0000
+2019-07-16 06:58:35 Max staged block number: 0
+2019-07-16 06:58:35 Sync speed: 0 blks/sec
+2019-07-16 06:58:35 Total/Connected/Active peers: 0/0/0
+2019-07-16 06:58:37 New block #1 106c…b7d8, with 0 txs added in chain, time elapsed: 39.362603ms.
+2019-07-16 06:58:37 New block #2 e230…bc15, with 0 txs added in chain, time elapsed: 39.538693ms.
+2019-07-16 06:58:37 New block #3 7705…7c47, with 0 txs added in chain, time elapsed: 39.554098ms.
+2019-07-16 06:58:37 New block #4 6747…180b, with 0 txs added in chain, time elapsed: 39.58114ms.
+2019-07-16 06:58:37 New block #5 6e0b…1669, with 0 txs added in chain, time elapsed: 39.605567ms.
+2019-07-16 06:58:37 New block #6 eaa6…6afe, with 0 txs added in chain, time elapsed: 39.637923ms.
+2019-07-16 06:58:37 New block #7 7651…1643, with 0 txs added in chain, time elapsed: 39.444398ms.
+2019-07-16 06:58:37 New block #8 9dd5…d506, with 0 txs added in chain, time elapsed: 39.399611ms.
+2019-07-16 06:58:37 New block #9 1445…7879, with 0 txs added in chain, time elapsed: 39.368695ms.
+2019-07-16 06:58:37 New block #10 ede6…dc04, with 0 txs added in chain, time elapsed: 39.364553ms.
+2019-07-16 06:58:37 New block #11 8de8…296a, with 0 txs added in chain, time elapsed: 39.328102ms.
+2019-07-16 06:58:37 New block #12 38b4…9b1a, with 0 txs added in chain, time elapsed: 39.316752ms.
+2019-07-16 06:58:37 New block #13 dd30…a4df, with 0 txs added in chain, time elapsed: 39.289391ms.
+2019-07-16 06:58:37 New block #14 2640…eb6b, with 0 txs added in chain, time elapsed: 39.291427ms.
+2019-07-16 06:58:37 New block #15 0522…a985, with 0 txs added in chain, time elapsed: 39.29514ms.
+2019-07-16 06:58:37 New block #16 f2bd…97c7, with 0 txs added in chain, time elapsed: 39.279074ms.
+2019-07-16 06:58:37 New block #17 e778…8482, with 0 txs added in chain, time elapsed: 39.274389ms.
+2019-07-16 06:58:37 New block #18 1084…bc93, with 0 txs added in chain, time elapsed: 39.234841ms.
+2019-07-16 06:58:37 New block #19 bc41…3503, with 0 txs added in chain, time elapsed: 39.234267ms.
+2019-07-16 06:58:37 New block #20 e68a…dfaf, with 0 txs added in chain, time elapsed: 39.235769ms.
+2019-07-16 06:58:37 New block #21 8448…5c18, with 0 txs added in chain, time elapsed: 39.235242ms.
+2019-07-16 06:58:37 New block #22 b901…2988, with 0 txs added in chain, time elapsed: 39.234141ms.
+2019-07-16 06:58:37 New block #23 2dff…ca55, with 0 txs added in chain, time elapsed: 39.226987ms.
+2019-07-16 06:58:37 New block #24 7a33…753a, with 0 txs added in chain, time elapsed: 39.217986ms.
+2019-07-16 06:58:39 New block #37 1f9c…9740, with 0 txs added in chain, time elapsed: 67.492338ms.
+2019-07-16 06:58:39 New block #38 59e2…b266, with 0 txs added in chain, time elapsed: 67.744491ms.
+2019-07-16 06:58:39 New block #39 5075…7a8c, with 0 txs added in chain, time elapsed: 67.750208ms.
+2019-07-16 06:58:39 New block #40 fbb1…182b, with 0 txs added in chain, time elapsed: 67.752826ms.
+2019-07-16 06:58:39 New block #41 d7aa…dc5a, with 0 txs added in chain, time elapsed: 67.760185ms.
+2019-07-16 06:58:39 New block #42 4332…442d, with 0 txs added in chain, time elapsed: 67.711518ms.
+2019-07-16 06:58:39 New block #43 695a…d1c5, with 0 txs added in chain, time elapsed: 67.707831ms.
+2019-07-16 06:58:39 New block #44 b4f5…0377, with 0 txs added in chain, time elapsed: 67.631841ms.
+2019-07-16 06:58:39 New block #45 0fba…470d, with 0 txs added in chain, time elapsed: 66.097881ms.
+2019-07-16 06:58:39 New block #46 4eaf…0fa5, with 0 txs added in chain, time elapsed: 66.069343ms.
+2019-07-16 06:58:39 New block #47 9de1…8fc2, with 0 txs added in chain, time elapsed: 66.070297ms.
+2019-07-16 06:58:39 New block #48 2afe…d1a4, with 0 txs added in chain, time elapsed: 66.07044ms.
+2019-07-16 06:58:39 New block #49 832b…12b6, with 0 txs added in chain, time elapsed: 66.071488ms.
+2019-07-16 06:58:39 New block #50 ba98…4b00, with 0 txs added in chain, time elapsed: 66.063935ms.
+2019-07-16 06:58:39 New block #51 fbb1…7cf6, with 0 txs added in chain, time elapsed: 66.037228ms.
+2019-07-16 06:58:39 New block #52 0e1b…b6f7, with 0 txs added in chain, time elapsed: 66.028752ms.
+2019-07-16 06:58:39 New block #53 c746…82fb, with 0 txs added in chain, time elapsed: 66.123839ms.
+2019-07-16 06:58:39 New block #54 ab0c…530a, with 0 txs added in chain, time elapsed: 66.13813ms.
+2019-07-16 06:58:39 New block #55 8ed8…4bd4, with 0 txs added in chain, time elapsed: 66.117913ms.
+2019-07-16 06:58:39 New block #56 b0d1…9895, with 0 txs added in chain, time elapsed: 66.113577ms.
+2019-07-16 06:58:39 New block #57 7e5c…cee1, with 0 txs added in chain, time elapsed: 66.108604ms.
+2019-07-16 06:58:39 New block #58 d45a…24c1, with 0 txs added in chain, time elapsed: 66.119948ms.
+2019-07-16 06:58:39 New block #59 6275…e29f, with 0 txs added in chain, time elapsed: 66.121862ms.
+2019-07-16 06:58:39 New block #60 bb75…7ddf, with 0 txs added in chain, time elapsed: 66.145151ms.
+2019-07-16 06:58:39 New block #61 4892…f2e7, with 0 txs added in chain, time elapsed: 66.130584ms.
+2019-07-16 06:58:39 New block #62 fdbc…ac9f, with 0 txs added in chain, time elapsed: 65.933254ms.
+2019-07-16 06:58:39 New block #63 4547…207f, with 0 txs added in chain, time elapsed: 65.928804ms.
+2019-07-16 06:58:39 New block #64 aff4…e30f, with 0 txs added in chain, time elapsed: 65.876714ms.
+2019-07-16 06:58:39 New block #65 1e41…e720, with 0 txs added in chain, time elapsed: 65.868698ms.
+2019-07-16 06:58:39 New block #66 a9e2…6640, with 0 txs added in chain, time elapsed: 65.854653ms.
+2019-07-16 06:58:39 New block #67 d05d…31ec, with 0 txs added in chain, time elapsed: 65.862635ms.
+2019-07-16 06:58:39 New block #68 852e…f2ed, with 0 txs added in chain, time elapsed: 65.85625ms.
+2019-07-16 06:58:41 New block #81 81ca…1316, with 0 txs added in chain, time elapsed: 68.13264ms.
+2019-07-16 06:58:41 New block #82 f7b2…0fb4, with 0 txs added in chain, time elapsed: 68.201113ms.
+2019-07-16 06:58:41 New block #83 a9fc…8c72, with 0 txs added in chain, time elapsed: 68.211256ms.
+2019-07-16 06:58:41 New block #84 eb64…3f5c, with 0 txs added in chain, time elapsed: 68.226538ms.
+2019-07-16 06:58:41 New block #85 c0df…6695, with 0 txs added in chain, time elapsed: 68.226889ms.
+2019-07-16 06:58:41 New block #86 21fe…4716, with 0 txs added in chain, time elapsed: 68.231417ms.
+2019-07-16 06:58:41 New block #87 4070…03db, with 0 txs added in chain, time elapsed: 68.168329ms.
+2019-07-16 06:58:41 New block #88 7fce…8c08, with 0 txs added in chain, time elapsed: 68.16695ms.
+2019-07-16 06:58:41 New block #89 ba6e…53a3, with 0 txs added in chain, time elapsed: 68.026132ms.
+2019-07-16 06:58:41 New block #90 e912…e852, with 0 txs added in chain, time elapsed: 68.026692ms.
+2019-07-16 06:58:41 New block #91 298a…ec83, with 0 txs added in chain, time elapsed: 68.032103ms.
+2019-07-16 06:58:41 New block #92 2dbe…5ce4, with 0 txs added in chain, time elapsed: 68.027779ms.
+2019-07-16 06:58:41 New block #93 af87…2753, with 0 txs added in chain, time elapsed: 68.065539ms.
+2019-07-16 06:58:41 New block #94 87e0…ee92, with 0 txs added in chain, time elapsed: 68.074795ms.
+2019-07-16 06:58:41 New block #95 c63a…6da9, with 0 txs added in chain, time elapsed: 68.079871ms.
+2019-07-16 06:58:41 New block #96 c06d…64cd, with 0 txs added in chain, time elapsed: 68.052321ms.
+2019-07-16 06:58:41 New block #97 b32b…d1b4, with 0 txs added in chain, time elapsed: 68.04142ms.
+2019-07-16 06:58:41 New block #98 1f37…d196, with 0 txs added in chain, time elapsed: 68.0335ms.
+2019-07-16 06:58:41 New block #99 7e91…4cc0, with 0 txs added in chain, time elapsed: 68.034802ms.
+2019-07-16 06:58:41 New block #100 adb8…a717, with 0 txs added in chain, time elapsed: 67.984471ms.
+2019-07-16 06:58:41 New block #101 c187…2c81, with 0 txs added in chain, time elapsed: 67.98428ms.
+2019-07-16 06:58:41 New block #102 cecb…f9be, with 0 txs added in chain, time elapsed: 67.977622ms.
+2019-07-16 06:58:41 New block #103 9a3a…a2e5, with 0 txs added in chain, time elapsed: 67.979152ms.
+2019-07-16 06:58:41 New block #104 7d11…5bdc, with 0 txs added in chain, time elapsed: 67.960716ms.
+2019-07-16 06:58:41 New block #105 fe48…d4f4, with 0 txs added in chain, time elapsed: 67.969246ms.
+2019-07-16 06:58:41 New block #106 dd20…0e18, with 0 txs added in chain, time elapsed: 67.973982ms.
+2019-07-16 06:58:41 New block #107 d3e2…377c, with 0 txs added in chain, time elapsed: 67.978572ms.
+2019-07-16 06:58:41 New block #108 7a38…fff3, with 0 txs added in chain, time elapsed: 67.973448ms.
+2019-07-16 06:58:41 New block #109 4309…6640, with 0 txs added in chain, time elapsed: 67.977565ms.
+2019-07-16 06:58:41 New block #110 e669…e2bc, with 0 txs added in chain, time elapsed: 67.984799ms.
+2019-07-16 06:58:41 New block #111 62e7…f252, with 0 txs added in chain, time elapsed: 67.995388ms.
+2019-07-16 06:58:41 New block #112 b25a…a0d8, with 0 txs added in chain, time elapsed: 67.999606ms.
+2019-07-16 06:58:43 New block #125 bbc4…99ff, with 0 txs added in chain, time elapsed: 38.606518ms.
+2019-07-16 06:58:43 New block #126 93d8…33e1, with 0 txs added in chain, time elapsed: 38.639475ms.
+2019-07-16 06:58:43 New block #127 767a…06bc, with 0 txs added in chain, time elapsed: 38.609204ms.
+2019-07-16 06:58:43 New block #128 749c…4e45, with 0 txs added in chain, time elapsed: 38.568941ms.
+2019-07-16 06:58:43 New block #129 ce96…627e, with 0 txs added in chain, time elapsed: 38.532617ms.
+2019-07-16 06:58:43 New block #130 843e…c0ec, with 0 txs added in chain, time elapsed: 38.49992ms.
+2019-07-16 06:58:43 New block #131 1e12…d154, with 0 txs added in chain, time elapsed: 38.431147ms.
+2019-07-16 06:58:43 New block #132 fa5b…596e, with 0 txs added in chain, time elapsed: 38.38229ms.
+2019-07-16 06:58:43 New block #133 a473…dcc9, with 0 txs added in chain, time elapsed: 38.169097ms.
+2019-07-16 06:58:43 New block #134 4d3f…881c, with 0 txs added in chain, time elapsed: 38.118905ms.
+2019-07-16 06:58:43 New block #135 5ac0…0345, with 0 txs added in chain, time elapsed: 38.069146ms.
+2019-07-16 06:58:43 New block #136 46f7…8c78, with 0 txs added in chain, time elapsed: 38.014091ms.
+2019-07-16 06:58:43 New block #137 afa0…3904, with 0 txs added in chain, time elapsed: 37.962734ms.
+2019-07-16 06:58:43 New block #138 a6b5…1d9f, with 0 txs added in chain, time elapsed: 37.858602ms.
+2019-07-16 06:58:43 New block #139 40cc…45db, with 0 txs added in chain, time elapsed: 37.809583ms.
+2019-07-16 06:58:43 New block #140 5c29…e8d4, with 0 txs added in chain, time elapsed: 37.746704ms.
+2019-07-16 06:58:43 New block #141 16b4…69dd, with 0 txs added in chain, time elapsed: 37.693185ms.
+2019-07-16 06:58:43 New block #142 8fdf…6688, with 0 txs added in chain, time elapsed: 37.645105ms.
+2019-07-16 06:58:43 New block #143 ed6c…e538, with 0 txs added in chain, time elapsed: 37.596487ms.
+2019-07-16 06:58:43 New block #144 19a8…0457, with 0 txs added in chain, time elapsed: 37.549334ms.
+2019-07-16 06:58:43 New block #145 d5ae…d8a0, with 0 txs added in chain, time elapsed: 37.5152ms.
+2019-07-16 06:58:43 New block #146 b060…fcce, with 0 txs added in chain, time elapsed: 37.463313ms.
+2019-07-16 06:58:43 New block #147 e626…9dd8, with 0 txs added in chain, time elapsed: 37.410229ms.
+2019-07-16 06:58:43 New block #148 66c1…a0e5, with 0 txs added in chain, time elapsed: 37.353959ms.
+2019-07-16 06:58:43 New block #149 d312…6e5c, with 0 txs added in chain, time elapsed: 37.301424ms.
+2019-07-16 06:58:43 New block #150 6226…dfd4, with 0 txs added in chain, time elapsed: 37.248477ms.
+2019-07-16 06:58:43 New block #151 761f…bc76, with 0 txs added in chain, time elapsed: 37.160835ms.
+2019-07-16 06:58:43 New block #152 3be3…9e3b, with 0 txs added in chain, time elapsed: 37.110884ms.
+2019-07-16 06:58:43 New block #153 b62e…978c, with 0 txs added in chain, time elapsed: 37.064304ms.
+2019-07-16 06:58:43 New block #154 c0db…e088, with 0 txs added in chain, time elapsed: 37.011594ms.
+2019-07-16 06:58:43 New block #155 b6f9…eb70, with 0 txs added in chain, time elapsed: 36.974738ms.
+2019-07-16 06:58:43 New block #156 17bd…d6bb, with 0 txs added in chain, time elapsed: 37.002739ms.
+2019-07-16 06:58:45 New block #169 9edd…a734, with 0 txs added in chain, time elapsed: 19.153979ms.
+2019-07-16 06:58:45 New block #170 1a49…0827, with 0 txs added in chain, time elapsed: 19.135114ms.
+2019-07-16 06:58:45 New block #171 c4a0…db2c, with 0 txs added in chain, time elapsed: 19.095229ms.
+2019-07-16 06:58:45 New block #172 3d9c…8d98, with 0 txs added in chain, time elapsed: 19.055531ms.
+2019-07-16 06:58:45 New block #173 ff1e…cf4c, with 0 txs added in chain, time elapsed: 19.015171ms.
+2019-07-16 06:58:45 New block #174 7a98…42a0, with 0 txs added in chain, time elapsed: 18.969283ms.
+2019-07-16 06:58:45 New block #175 f5cc…a2aa, with 0 txs added in chain, time elapsed: 18.927599ms.
+2019-07-16 06:58:45 New block #176 3c0e…5971, with 0 txs added in chain, time elapsed: 18.883376ms.
+2019-07-16 06:58:45 New block #177 698a…5696, with 0 txs added in chain, time elapsed: 18.841138ms.
+2019-07-16 06:58:45 New block #178 368f…fdc2, with 0 txs added in chain, time elapsed: 18.798192ms.
+2019-07-16 06:58:45 New block #179 6749…45ef, with 0 txs added in chain, time elapsed: 18.750205ms.
+2019-07-16 06:58:45 New block #180 4e6b…bbab, with 0 txs added in chain, time elapsed: 18.703924ms.
+2019-07-16 06:58:45 New block #181 c7a9…3576, with 0 txs added in chain, time elapsed: 18.657291ms.
+2019-07-16 06:58:45 New block #182 ff46…ed4e, with 0 txs added in chain, time elapsed: 18.599874ms.
+2019-07-16 06:58:45 New block #183 866b…4b25, with 0 txs added in chain, time elapsed: 18.415968ms.
+2019-07-16 06:58:45 New block #184 2d32…e360, with 0 txs added in chain, time elapsed: 18.367462ms.
+2019-07-16 06:58:45 New block #185 d87b…d536, with 0 txs added in chain, time elapsed: 18.316498ms.
+2019-07-16 06:58:45 New block #186 2682…166c, with 0 txs added in chain, time elapsed: 18.271472ms.
+2019-07-16 06:58:45 New block #187 621d…ee24, with 0 txs added in chain, time elapsed: 18.211854ms.
+2019-07-16 06:58:45 New block #188 7980…da7e, with 0 txs added in chain, time elapsed: 18.156621ms.
+2019-07-16 06:58:45 New block #189 02b7…4662, with 0 txs added in chain, time elapsed: 18.112992ms.
+2019-07-16 06:58:45 New block #190 0385…3e49, with 0 txs added in chain, time elapsed: 18.067949ms.
+2019-07-16 06:58:45 New block #191 b7fb…cf6f, with 0 txs added in chain, time elapsed: 17.985142ms.
+2019-07-16 06:58:45 New block #192 245b…f89a, with 0 txs added in chain, time elapsed: 17.930432ms.
+2019-07-16 06:58:45 New block #193 4426…682c, with 0 txs added in chain, time elapsed: 17.877727ms.
+2019-07-16 06:58:45 New block #194 17f0…4f51, with 0 txs added in chain, time elapsed: 17.83366ms.
+2019-07-16 06:58:45 New block #195 4e92…5163, with 0 txs added in chain, time elapsed: 17.784769ms.
+2019-07-16 06:58:45 New block #196 06b7…e517, with 0 txs added in chain, time elapsed: 17.736732ms.
+2019-07-16 06:58:45 New block #197 9fc9…c457, with 0 txs added in chain, time elapsed: 17.696008ms.
+2019-07-16 06:58:45 New block #198 d52c…b2de, with 0 txs added in chain, time elapsed: 17.601711ms.
+2019-07-16 06:58:45 New block #199 f56e…6601, with 0 txs added in chain, time elapsed: 17.547979ms.
+2019-07-16 06:58:45 New block #200 ca44…83eb, with 0 txs added in chain, time elapsed: 17.497928ms.
+2019-07-16 06:58:47 New block #213 df71…4b8a, with 0 txs added in chain, time elapsed: 68.289246ms.
+2019-07-16 06:58:47 New block #214 0eac…5759, with 0 txs added in chain, time elapsed: 68.490714ms.
+2019-07-16 06:58:47 New block #215 4247…9876, with 0 txs added in chain, time elapsed: 68.508897ms.
+2019-07-16 06:58:47 New block #216 a721…201e, with 0 txs added in chain, time elapsed: 68.525956ms.
+2019-07-16 06:58:47 New block #217 3cc3…4c37, with 0 txs added in chain, time elapsed: 68.517447ms.
+2019-07-16 06:58:47 New block #218 57bf…5047, with 0 txs added in chain, time elapsed: 68.525035ms.
+2019-07-16 06:58:47 New block #219 9095…ede3, with 0 txs added in chain, time elapsed: 68.534745ms.
+2019-07-16 06:58:47 New block #220 dcce…5511, with 0 txs added in chain, time elapsed: 68.54724ms.
+2019-07-16 06:58:47 New block #221 4aaf…241c, with 0 txs added in chain, time elapsed: 68.394776ms.
+2019-07-16 06:58:47 New block #222 9b5f…a929, with 0 txs added in chain, time elapsed: 68.39898ms.
+2019-07-16 06:58:47 New block #223 749e…810f, with 0 txs added in chain, time elapsed: 68.408493ms.
+2019-07-16 06:58:47 New block #224 fa3f…f11a, with 0 txs added in chain, time elapsed: 68.422684ms.
+2019-07-16 06:58:47 New block #225 7788…b2c9, with 0 txs added in chain, time elapsed: 68.421007ms.
+2019-07-16 06:58:47 New block #226 3d0f…8c3e, with 0 txs added in chain, time elapsed: 68.423554ms.
+2019-07-16 06:58:47 New block #227 3f70…033f, with 0 txs added in chain, time elapsed: 68.424867ms.
+2019-07-16 06:58:47 New block #228 acc9…07c5, with 0 txs added in chain, time elapsed: 68.427483ms.
+2019-07-16 06:58:47 New block #229 24e8…4004, with 0 txs added in chain, time elapsed: 68.431329ms.
+2019-07-16 06:58:47 New block #230 db00…9025, with 0 txs added in chain, time elapsed: 68.424868ms.
+2019-07-16 06:58:47 New block #231 b50c…d1ef, with 0 txs added in chain, time elapsed: 68.436268ms.
+2019-07-16 06:58:47 New block #232 8477…69b2, with 0 txs added in chain, time elapsed: 68.443869ms.
+2019-07-16 06:58:47 New block #233 0910…30a2, with 0 txs added in chain, time elapsed: 68.421497ms.
+2019-07-16 06:58:47 New block #234 6f24…3220, with 0 txs added in chain, time elapsed: 68.423894ms.
+2019-07-16 06:58:47 New block #235 2fde…435e, with 0 txs added in chain, time elapsed: 68.432641ms.
+2019-07-16 06:58:47 New block #236 d816…1f01, with 0 txs added in chain, time elapsed: 68.436503ms.
+2019-07-16 06:58:47 New block #237 f7b1…f31d, with 0 txs added in chain, time elapsed: 68.412607ms.
+2019-07-16 06:58:47 New block #238 c01e…7592, with 0 txs added in chain, time elapsed: 68.410826ms.
+2019-07-16 06:58:47 New block #239 d9ba…6bc7, with 0 txs added in chain, time elapsed: 68.415938ms.
+2019-07-16 06:58:47 New block #240 8113…91d5, with 0 txs added in chain, time elapsed: 68.419984ms.
+2019-07-16 06:58:47 New block #241 351d…47d0, with 0 txs added in chain, time elapsed: 68.417156ms.
+2019-07-16 06:58:47 New block #242 1398…b615, with 0 txs added in chain, time elapsed: 68.491545ms.
+2019-07-16 06:58:47 New block #243 07ea…526f, with 0 txs added in chain, time elapsed: 68.512384ms.
+2019-07-16 06:58:47 New block #244 2cf3…027c, with 0 txs added in chain, time elapsed: 68.511246ms.
+2019-07-16 06:58:49 New block #245 af6b…123d, with 0 txs added in chain, time elapsed: 17.596956ms.
+2019-07-16 06:58:49 New block #246 b67a…aa2d, with 0 txs added in chain, time elapsed: 17.583573ms.
+2019-07-16 06:58:49 New block #247 0755…8530, with 0 txs added in chain, time elapsed: 17.558786ms.
+2019-07-16 06:58:49 New block #248 5454…69fa, with 0 txs added in chain, time elapsed: 17.534136ms.
+2019-07-16 06:58:49 New block #249 dda0…d84f, with 0 txs added in chain, time elapsed: 17.491352ms.
+2019-07-16 06:58:49 New block #250 6a13…3c49, with 0 txs added in chain, time elapsed: 17.459469ms.
+2019-07-16 06:58:49 New block #251 8f3d…288e, with 0 txs added in chain, time elapsed: 17.439085ms.
+2019-07-16 06:58:49 New block #252 9c39…db4c, with 0 txs added in chain, time elapsed: 17.389324ms.
+2019-07-16 06:58:49 New block #253 2838…c726, with 0 txs added in chain, time elapsed: 17.35001ms.
+2019-07-16 06:58:49 New block #254 f7f6…b397, with 0 txs added in chain, time elapsed: 17.323957ms.
+2019-07-16 06:58:49 New block #255 1e56…4eef, with 0 txs added in chain, time elapsed: 17.296662ms.
+2019-07-16 06:58:49 New block #256 93fd…bb20, with 0 txs added in chain, time elapsed: 17.264528ms.
+2019-07-16 06:58:49 New block #257 1484…b96a, with 0 txs added in chain, time elapsed: 17.217666ms.
+2019-07-16 06:58:49 New block #258 172a…a4af, with 0 txs added in chain, time elapsed: 17.179466ms.
+2019-07-16 06:58:49 New block #259 822e…bd1c, with 0 txs added in chain, time elapsed: 17.061727ms.
+2019-07-16 06:58:49 New block #260 c030…cd41, with 0 txs added in chain, time elapsed: 17.019718ms.
+2019-07-16 06:58:49 New block #261 47ba…fd2d, with 0 txs added in chain, time elapsed: 16.902732ms.
+2019-07-16 06:58:49 New block #262 d419…55cd, with 0 txs added in chain, time elapsed: 16.855747ms.
+2019-07-16 06:58:49 New block #263 174e…ec06, with 0 txs added in chain, time elapsed: 16.811267ms.
+2019-07-16 06:58:49 New block #264 860b…b4b1, with 0 txs added in chain, time elapsed: 16.766131ms.
+2019-07-16 06:58:49 New block #265 6aa5…96e1, with 0 txs added in chain, time elapsed: 16.688106ms.
+2019-07-16 06:58:50 
+2019-07-16 06:58:50 ======================================================== Sync Statics =========================================================
+2019-07-16 06:58:50 Best block number: 265, hash: 6aa5…96e1
+2019-07-16 06:58:50 Network Best block number: 265, hash: 6aa5…96e1
+2019-07-16 06:58:50 Max staged block number: 0
+2019-07-16 06:58:50 Sync speed: 17 blks/sec
+2019-07-16 06:58:50 Total/Connected/Active peers: 3/3/3
+2019-07-16 06:58:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:58:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 06:58:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:58:50            32312        265   6aa5…96e1   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 06:58:50            32312        265   6aa5…96e1   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 06:58:50            32312        265   6aa5…96e1   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 06:58:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:05 
+2019-07-16 06:59:05 ======================================================== Sync Statics =========================================================
+2019-07-16 06:59:05 Best block number: 268, hash: 4dde…aa62
+2019-07-16 06:59:05 Network Best block number: 268, hash: 4dde…aa62
+2019-07-16 06:59:05 Max staged block number: 0
+2019-07-16 06:59:05 Sync speed: 0 blks/sec
+2019-07-16 06:59:05 Total/Connected/Active peers: 3/3/3
+2019-07-16 06:59:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:05       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 06:59:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:05            32690        268   4dde…aa62   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 06:59:05            32690        268   4dde…aa62   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 06:59:05            32690        268   4dde…aa62   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 06:59:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:20 
+2019-07-16 06:59:20 ======================================================== Sync Statics =========================================================
+2019-07-16 06:59:20 Best block number: 271, hash: f32d…bee0
+2019-07-16 06:59:20 Network Best block number: 271, hash: f32d…bee0
+2019-07-16 06:59:20 Max staged block number: 0
+2019-07-16 06:59:20 Sync speed: 0 blks/sec
+2019-07-16 06:59:20 Total/Connected/Active peers: 3/3/3
+2019-07-16 06:59:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 06:59:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:20            33077        271   f32d…bee0   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 06:59:20            33077        271   f32d…bee0   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 06:59:20            33077        271   f32d…bee0   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 06:59:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:35 
+2019-07-16 06:59:35 ======================================================== Sync Statics =========================================================
+2019-07-16 06:59:35 Best block number: 274, hash: 0fa3…42ca
+2019-07-16 06:59:35 Network Best block number: 274, hash: 0fa3…42ca
+2019-07-16 06:59:35 Max staged block number: 0
+2019-07-16 06:59:35 Sync speed: 0 blks/sec
+2019-07-16 06:59:35 Total/Connected/Active peers: 4/4/4
+2019-07-16 06:59:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:35       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 06:59:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:35            33473        274   0fa3…42ca   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 06:59:35            33473        274   0fa3…42ca   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 06:59:35            33473        274   0fa3…42ca   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 06:59:35                0          0   0000…0000   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 06:59:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:50 
+2019-07-16 06:59:50 ======================================================== Sync Statics =========================================================
+2019-07-16 06:59:50 Best block number: 277, hash: 1ddc…95b4
+2019-07-16 06:59:50 Network Best block number: 277, hash: 1ddc…95b4
+2019-07-16 06:59:50 Max staged block number: 0
+2019-07-16 06:59:50 Sync speed: 0 blks/sec
+2019-07-16 06:59:50 Total/Connected/Active peers: 4/4/4
+2019-07-16 06:59:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 06:59:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 06:59:50            33878        277   1ddc…95b4   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 06:59:50            33878        277   1ddc…95b4   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 06:59:50            33878        277   1ddc…95b4   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 06:59:50            32188        264   860b…b4b1   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 06:59:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:05 
+2019-07-16 07:00:05 ======================================================== Sync Statics =========================================================
+2019-07-16 07:00:05 Best block number: 280, hash: 0cca…b6ae
+2019-07-16 07:00:05 Network Best block number: 280, hash: 0cca…b6ae
+2019-07-16 07:00:05 Max staged block number: 0
+2019-07-16 07:00:05 Sync speed: 0 blks/sec
+2019-07-16 07:00:05 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:00:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:05       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:00:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:05            34292        280   0cca…b6ae   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:00:05            34292        280   0cca…b6ae   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:00:05            34292        280   0cca…b6ae   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:00:05            34292        280   0cca…b6ae   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 07:00:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:20 
+2019-07-16 07:00:20 ======================================================== Sync Statics =========================================================
+2019-07-16 07:00:20 Best block number: 283, hash: 5d78…4184
+2019-07-16 07:00:20 Network Best block number: 283, hash: 5d78…4184
+2019-07-16 07:00:20 Max staged block number: 0
+2019-07-16 07:00:20 Sync speed: 0 blks/sec
+2019-07-16 07:00:20 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:00:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:00:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:20            34715        283   5d78…4184   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:00:20            34715        283   5d78…4184   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:00:20            34715        283   5d78…4184   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:00:20            34715        283   5d78…4184   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 07:00:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:35 
+2019-07-16 07:00:35 ======================================================== Sync Statics =========================================================
+2019-07-16 07:00:35 Best block number: 286, hash: 9938…50b2
+2019-07-16 07:00:35 Network Best block number: 286, hash: 9938…50b2
+2019-07-16 07:00:35 Max staged block number: 0
+2019-07-16 07:00:35 Sync speed: 0 blks/sec
+2019-07-16 07:00:35 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:00:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:35       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:00:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:35            35147        286   9938…50b2   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:00:35            35147        286   9938…50b2   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:00:35            35147        286   9938…50b2   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:00:35            35147        286   9938…50b2   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         197     NORMAL
+2019-07-16 07:00:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:50 
+2019-07-16 07:00:50 ======================================================== Sync Statics =========================================================
+2019-07-16 07:00:50 Best block number: 288, hash: b577…f071
+2019-07-16 07:00:50 Network Best block number: 288, hash: b577…f071
+2019-07-16 07:00:50 Max staged block number: 0
+2019-07-16 07:00:50 Sync speed: 0 blks/sec
+2019-07-16 07:00:50 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:00:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:00:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:00:50            35440        288   b577…f071   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:00:50            35440        288   b577…f071   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:00:50            35440        288   b577…f071   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:00:50            35440        288   b577…f071   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         270     NORMAL
+2019-07-16 07:00:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:04 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9006914 }))
+2019-07-16 07:01:05 
+2019-07-16 07:01:05 ======================================================== Sync Statics =========================================================
+2019-07-16 07:01:05 Best block number: 290, hash: cc1e…a5af
+2019-07-16 07:01:05 Network Best block number: 290, hash: cc1e…a5af
+2019-07-16 07:01:05 Max staged block number: 0
+2019-07-16 07:01:05 Sync speed: 0 blks/sec
+2019-07-16 07:01:05 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:01:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:05       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:01:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:05            35734        290   cc1e…a5af   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:01:05            35734        290   cc1e…a5af   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:01:05            35734        290   cc1e…a5af   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:01:05            35734        290   cc1e…a5af   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         270     NORMAL
+2019-07-16 07:01:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:09 Got bad block #292, 011de45c2149cbaad4b9b31aa609aa46d689835f7b21566b1488d8eac9901f32
+2019-07-16 07:01:20 
+2019-07-16 07:01:20 ======================================================== Sync Statics =========================================================
+2019-07-16 07:01:20 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:01:20 Network Best block number: 294, hash: 0b19…e502
+2019-07-16 07:01:20 Max staged block number: 0
+2019-07-16 07:01:20 Sync speed: 0 blks/sec
+2019-07-16 07:01:20 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:01:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:01:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:20            36323        294   0b19…e502   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         226   BACKWARD
+2019-07-16 07:01:20            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:01:20            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:01:20            35881        291   6f46…5906   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:01:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:31 Stage 5 block verification failed for #292 (c618…4caf)
+Error: Block(InvalidGasUsed(Mismatch { expected: 441774, found: 361922 }))
+2019-07-16 07:01:35 
+2019-07-16 07:01:35 ======================================================== Sync Statics =========================================================
+2019-07-16 07:01:35 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:01:35 Network Best block number: 296, hash: 8ca7…8a8a
+2019-07-16 07:01:35 Max staged block number: 0
+2019-07-16 07:01:35 Sync speed: 0 blks/sec
+2019-07-16 07:01:35 Total/Connected/Active peers: 4/4/4
+2019-07-16 07:01:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:35       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:01:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:35            36622        296   8ca7…8a8a   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         226   BACKWARD
+2019-07-16 07:01:35            36027        292   c618…4caf   172. 17.  0.  1:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:01:35            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:01:35            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:01:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:45 Got bad block #293, 98d4ca80b151b7e4fb9b8c27b3ea68b90d4b9369a76a52d41e80106a7d0ca851
+2019-07-16 07:01:50 
+2019-07-16 07:01:50 ======================================================== Sync Statics =========================================================
+2019-07-16 07:01:50 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:01:50 Network Best block number: 300, hash: 8c5d…d094
+2019-07-16 07:01:50 Max staged block number: 0
+2019-07-16 07:01:50 Sync speed: 0 blks/sec
+2019-07-16 07:01:50 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:01:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:01:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:50            37232        300   8c5d…d094   172. 17.  0.  2:30303          r-0.2.5.3ecad29  Outbound     Y         226   BACKWARD
+2019-07-16 07:01:50            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29  Outbound     Y         241     NORMAL
+2019-07-16 07:01:50            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29  Outbound     Y         228     NORMAL
+2019-07-16 07:01:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:01:50 Abnormal status, reseting network...
+2019-07-16 07:02:05 Disconnect with idle node: 88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303.
+2019-07-16 07:02:05 Disconnect with idle node: 66666666-e35f-4cf9-9234-65cea7558aa4@172.17.0.3:30303.
+2019-07-16 07:02:05 Disconnect with idle node: 55555555-e35f-4cf9-9234-65cea7558aa4@172.17.0.2:30303.
+2019-07-16 07:02:05 
+2019-07-16 07:02:05 ======================================================== Sync Statics =========================================================
+2019-07-16 07:02:05 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:02:05 Network Best block number: 300, hash: 8c5d…d094
+2019-07-16 07:02:05 Max staged block number: 0
+2019-07-16 07:02:05 Sync speed: 0 blks/sec
+2019-07-16 07:02:05 Total/Connected/Active peers: 0/0/0
+2019-07-16 07:02:05 Abnormal status, reseting network...
+2019-07-16 07:02:16 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:02:20 Disconnect with idle node: 66666666-e35f-4cf9-9234-65cea7558aa4@172.17.0.3:30303.
+2019-07-16 07:02:20 
+2019-07-16 07:02:20 ======================================================== Sync Statics =========================================================
+2019-07-16 07:02:20 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:02:20 Network Best block number: 306, hash: 6390…94dc
+2019-07-16 07:02:20 Max staged block number: 0
+2019-07-16 07:02:20 Sync speed: 0 blks/sec
+2019-07-16 07:02:20 Total/Connected/Active peers: 2/2/2
+2019-07-16 07:02:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:02:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:20            38177        306   6390…94dc   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:02:20            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:02:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:21 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:02:35 Disconnect with idle node: 88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303.
+2019-07-16 07:02:35 Disconnect with idle node: 66666666-e35f-4cf9-9234-65cea7558aa4@172.17.0.3:30303.
+2019-07-16 07:02:35 
+2019-07-16 07:02:35 ======================================================== Sync Statics =========================================================
+2019-07-16 07:02:35 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:02:35 Network Best block number: 308, hash: 5035…4a56
+2019-07-16 07:02:35 Max staged block number: 0
+2019-07-16 07:02:35 Sync speed: 0 blks/sec
+2019-07-16 07:02:35 Total/Connected/Active peers: 1/1/1
+2019-07-16 07:02:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:35       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:02:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:35            38500        308   5035…4a56   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:02:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:36 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:02:50 
+2019-07-16 07:02:50 ======================================================== Sync Statics =========================================================
+2019-07-16 07:02:50 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:02:50 Network Best block number: 312, hash: b737…ab6a
+2019-07-16 07:02:50 Max staged block number: 0
+2019-07-16 07:02:50 Sync speed: 0 blks/sec
+2019-07-16 07:02:50 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:02:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:02:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:50            39158        312   b737…ab6a   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:02:50            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:02:50            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:02:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:02:53 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:03:05 Disconnect with idle node: 88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303.
+2019-07-16 07:03:05 
+2019-07-16 07:03:05 ======================================================== Sync Statics =========================================================
+2019-07-16 07:03:05 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:03:05 Network Best block number: 314, hash: e957…716d
+2019-07-16 07:03:05 Max staged block number: 0
+2019-07-16 07:03:05 Sync speed: 0 blks/sec
+2019-07-16 07:03:05 Total/Connected/Active peers: 2/2/2
+2019-07-16 07:03:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:05       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:03:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:05            39493        314   e957…716d   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:03:05            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:03:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:05 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:03:20 Disconnect with idle node: 88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303.
+2019-07-16 07:03:20 
+2019-07-16 07:03:20 ======================================================== Sync Statics =========================================================
+2019-07-16 07:03:20 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:03:20 Network Best block number: 318, hash: 4673…f0fe
+2019-07-16 07:03:20 Max staged block number: 0
+2019-07-16 07:03:20 Sync speed: 0 blks/sec
+2019-07-16 07:03:20 Total/Connected/Active peers: 2/2/2
+2019-07-16 07:03:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:03:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:20            40175        318   4673…f0fe   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:03:20            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:03:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:22 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:03:35 Disconnect with idle node: 88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303.
+2019-07-16 07:03:35 
+2019-07-16 07:03:35 ======================================================== Sync Statics =========================================================
+2019-07-16 07:03:35 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:03:35 Network Best block number: 320, hash: 2aea…ba7a
+2019-07-16 07:03:35 Max staged block number: 0
+2019-07-16 07:03:35 Sync speed: 0 blks/sec
+2019-07-16 07:03:35 Total/Connected/Active peers: 2/2/2
+2019-07-16 07:03:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:35       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:03:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:35            40522        320   2aea…ba7a   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:03:35            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:03:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:35 Staged blocks from 297 to 298 with parent: 8ca7…8a8a
+2019-07-16 07:03:36 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:03:50 
+2019-07-16 07:03:50 ======================================================== Sync Statics =========================================================
+2019-07-16 07:03:50 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:03:50 Network Best block number: 324, hash: 4e35…ca91
+2019-07-16 07:03:50 Max staged block number: 298
+2019-07-16 07:03:50 Sync speed: 0 blks/sec
+2019-07-16 07:03:50 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:03:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:03:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:50            41228        324   4e35…ca91   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:03:50            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:03:50            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:03:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:03:54 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:04:05 Disconnect with idle node: 88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303.
+2019-07-16 07:04:05 
+2019-07-16 07:04:05 ======================================================== Sync Statics =========================================================
+2019-07-16 07:04:05 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:04:05 Network Best block number: 326, hash: 1bd6…ad3f
+2019-07-16 07:04:05 Max staged block number: 298
+2019-07-16 07:04:05 Sync speed: 0 blks/sec
+2019-07-16 07:04:05 Total/Connected/Active peers: 2/2/2
+2019-07-16 07:04:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:05       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:04:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:05            41587        326   1bd6…ad3f   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:04:05            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:06 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:04:20 
+2019-07-16 07:04:20 ======================================================== Sync Statics =========================================================
+2019-07-16 07:04:20 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:04:20 Network Best block number: 330, hash: 12b8…95b0
+2019-07-16 07:04:20 Max staged block number: 298
+2019-07-16 07:04:20 Sync speed: 0 blks/sec
+2019-07-16 07:04:20 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:04:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:04:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:20            42317        330   12b8…95b0   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               275     NORMAL
+2019-07-16 07:04:20            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:20            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:22 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:04:35 
+2019-07-16 07:04:35 ======================================================== Sync Statics =========================================================
+2019-07-16 07:04:35 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:04:35 Network Best block number: 332, hash: 9c6c…ede0
+2019-07-16 07:04:35 Max staged block number: 298
+2019-07-16 07:04:35 Sync speed: 0 blks/sec
+2019-07-16 07:04:35 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:04:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:35       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:04:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:35            42688        332   9c6c…ede0   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               288    THUNDER
+2019-07-16 07:04:35            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:35            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:35 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:36 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:04:50 
+2019-07-16 07:04:50 ======================================================== Sync Statics =========================================================
+2019-07-16 07:04:50 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:04:50 Network Best block number: 336, hash: 2d6b…6d7a
+2019-07-16 07:04:50 Max staged block number: 298
+2019-07-16 07:04:50 Sync speed: 0 blks/sec
+2019-07-16 07:04:50 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:04:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:50       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:04:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:50            43442        336   2d6b…6d7a   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               288    THUNDER
+2019-07-16 07:04:50            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:50            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:04:50 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:04:52 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:05:05 
+2019-07-16 07:05:05 ======================================================== Sync Statics =========================================================
+2019-07-16 07:05:05 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:05:05 Network Best block number: 339, hash: d006…2f4e
+2019-07-16 07:05:05 Max staged block number: 298
+2019-07-16 07:05:05 Sync speed: 0 blks/sec
+2019-07-16 07:05:05 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:05:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:05:05       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:05:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:05:05            43825        338   af18…66cc   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               288    THUNDER
+2019-07-16 07:05:05            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:05:05            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:05:05 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:05:08 Stage 5 block verification failed for #291 (e667…8d72)
+Error: Block(InvalidGasUsed(Mismatch { expected: 9166603, found: 9116797 }))
+2019-07-16 07:05:20 
+2019-07-16 07:05:20 ======================================================== Sync Statics =========================================================
+2019-07-16 07:05:20 Best block number: 291, hash: 6f46…5906
+2019-07-16 07:05:20 Network Best block number: 342, hash: c9c3…35ee
+2019-07-16 07:05:20 Max staged block number: 298
+2019-07-16 07:05:20 Sync speed: 0 blks/sec
+2019-07-16 07:05:20 Total/Connected/Active peers: 3/3/3
+2019-07-16 07:05:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:05:20       Total Diff    Blk No.    Blk Hash                 Address                 Revision      Conn  Seed  LstReq No.       Mode
+2019-07-16 07:05:20 -------------------------------------------------------------------------------------------------------------------------------
+2019-07-16 07:05:20            44603        342   c9c3…35ee   172. 17.  0.  2:30303          r-0.2.5.3ecad29   Inbound               288    THUNDER
+2019-07-16 07:05:20            35881        291   6f46…5906   172. 17.  0.  4:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:05:20            35881        291   6f46…5906   172. 17.  0.  3:30303          r-0.2.5.3ecad29   Inbound                 0     NORMAL
+2019-07-16 07:05:20 -------------------------------------------------------------------------------------------------------------------------------
