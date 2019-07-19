@@ -33,7 +33,7 @@ cors = ["none"]
 [websockets]
 disable = false
 port = 8546
-interface = "local"
+interface = "0.0.0.0"
 apis = ["all"]
 origins = ["none"]
 hosts = ["none"]
