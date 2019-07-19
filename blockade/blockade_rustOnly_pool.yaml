@@ -67,6 +67,8 @@ containers:
       "./pool_node": "/home/pooladm/pool/aion_solo_pool/pool_configs"
     expose: [3333]
     user: "pooladm"
+    ports:
+      3333: 3333
 #network:
 #  flaky: 30%
 #  slow: 75ms 100ms distribution normal

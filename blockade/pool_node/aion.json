@@ -14,9 +14,9 @@
         "paymentInterval": 20,
         "minimumPayment": 70,
         "daemon": {
-            "host": "172.17.0.2",
+            "host": "172.17.0.1",
             "__port": 19332,
-            "port": 8545,
+            "port": 9002,
             "user": "",
             "password": ""
         }
@@ -31,8 +31,8 @@
 
     "daemons": [
         {
-            "host": "172.17.0.2",
-            "port": 8545,
+            "host": "172.17.0.1",
+            "port": 9002,
             "user": "0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137",
             "password": "password"
         }
