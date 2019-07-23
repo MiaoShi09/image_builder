@@ -6,6 +6,7 @@ keys_iterations = 10240
 refresh_time = 5
 unlock = []
 password = []
+stake_contract = "0xa056337bb14e818f3f53e13ab0d93b6539aa570cba91ce65c716058241989be9"
 
 [network]
 sync_from_boot_nodes_only = false
