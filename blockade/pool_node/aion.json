@@ -3,7 +3,7 @@
     "testnet": true,
     "coin": "aion.json",
 
-    "address": "0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137",
+    "address": "0xa02df9004be3c4a20aeb50c459212412b1d0a58da3e1ac70ba74dde6b4accf4b",
 
     "__rewardRecipients": "total in percentage is the pool fee charged, (rewardRecipients[0] + rewardRecipients[1] + ...)%",
     "rewardRecipients": {
@@ -33,8 +33,8 @@
         {
             "host": "172.17.0.1",
             "port": 9002,
-            "user": "0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137",
-            "password": "password"
+            "user": "",
+            "password": ""
         }
     ],
 

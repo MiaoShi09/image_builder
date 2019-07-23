@@ -77,9 +77,9 @@ blk_price_window = 20
 max_blk_traverse = 64
 gas_price_percentile = 60
 
-author = "0xa07e185919beef1e0a79fea78fcfabc24927c5067d758e514ad74b905a2bf137"
+author = "0xa02df9004be3c4a20aeb50c459212412b1d0a58da3e1ac70ba74dde6b4accf4b"
 
-#staker_private_key = "0x23c6a047cc6b88c8e7b023ade132304797ac86675db50673afae7130e2476aaf"
+#staker_private_key = "0xcc76648ce8798bc18130bc9d637995e5c42a922ebeab78795fac58081b9cf9d4"
 
 
 [db]
