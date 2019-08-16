@@ -21,35 +21,13 @@ containers:
       3002: 30303
       9002: 8545
 
-#  n3:
-#    image: aionnetwork/aion:latest
-    #image: aionnetwork/aion:0.4.0.1-e8d3c4390
-#    command: "'./aion.sh' '-n custom'"
-#    volumes:
-#      "/home/aion/unity_test/blockade/node3": "/aion/custom"
-#    expose: [30303, 8545]
-#    ports:
-#      3003: 30303
-#      9003: 8545
-
-#  n4:
-#    image: aionnetwork/aion:latest
-    #image: aionnetwork/aion:0.4.0.1-e8d3c4390
-#    command: "./aion.sh -n custom"
-#    volumes:
-#      "/home/aion/unity_test/blockade/node4": "/aion/custom"
-#    expose: [30303, 8545]
-#    ports:
-#      3004: 30303
-#      9004: 8545
-
 # aion rust unity kernel settings
   r1:
    image: blockade/aionr:latest
    command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node1": "/aionr/custom"
-   expose: [30303, 8545, 8008]
+   expose: [30303, 8545]
    ports:
      3005: 30303
      9005: 8545
@@ -58,11 +36,18 @@ containers:
    command: "./custom.sh --base-path=custom/base --log-file=custom/log"
    volumes:
      "/home/aion/miao_ws/AionR_Docker_Images_Builder/blockade/rust_node2": "/aionr/custom"
-   expose: [30303, 8545, 8008]
+   expose: [30303, 8545]
    ports:
      3006: 30303
      9006: 8545
-
+  pool:
+    image: chaionclibackup/solopool:latest
+    volumes:
+      "./pool_node": "/home/pooladm/pool/aion_solo_pool/pool_configs"
+    expose: [3333]
+    user: "pooladm"
+    ports:
+      3333: 3333
 
 #network:
 #  flaky: 30%

@@ -5,7 +5,7 @@
 	<api>
 		<rpc active="true" ip="0.0.0.0" port="8545">
 			<!--boolean, enable/disable cross origin requests (browser enforced)-->
-			<cors-enabled>false</cors-enabled>
+			<cors-enabled>true</cors-enabled>
 			<!--comma-separated list, APIs available: web3,net,debug,personal,eth,stratum-->
 			<apis-enabled>web3,eth,personal,stratum,priv</apis-enabled>
 			<!--size of thread pool allocated for rpc requests-->
@@ -26,8 +26,9 @@
 	<net>
 		<id>0</id>
 		<nodes>
-                    <node>p2p://66666666-e35f-4cf9-9234-65cea7558aa4@172.17.0.3:30303</node>
-										<node>p2p://99999999-e35f-4cf9-9234-65cea7558aa4@172.17.0.4:30303</node>
+                    <node>p2p://66666666-e35f-4cf9-9234-65cea7558aa4@172.17.0.1:3002</node>
+                    <node>p2p://88888888-e35f-4cf9-9234-65cea7558aa4@172.17.0.1:3005</node>
+                    <node>p2p://99999999-e35f-4cf9-9234-65cea7558aa4@172.17.0.1:3006</node>
 		</nodes>
 		<p2p>
 			<ip>0.0.0.0</ip>
@@ -47,9 +48,9 @@
 		<compact enabled="false" slow-import="1000" frequency="600000"></compact>
 	</sync>
 	<consensus>
-		<mining>false</mining>
+		<mining>true</mining>
                 <staking>true</staking>
-		<miner-address>0000000000000000000000000000000000000000000000000000000000000000</miner-address>
+		<miner-address>a02df9004be3c4a20aeb50c459212412b1d0a58da3e1ac70ba74dde6b4accf4b</miner-address>
                 <staker-address>a02df9004be3c4a20aeb50c459212412b1d0a58da3e1ac70ba74dde6b4accf4b</staker-address>
 		<cpu-mine-threads>2</cpu-mine-threads>
 		<extra-data>AION</extra-data>
@@ -83,10 +84,10 @@
 		<log-path>log</log-path>
 		<GEN>INFO</GEN>
 		<VM>ERROR</VM>
-		<SYNC>INFO</SYNC>
+		<SYNC>DEBUG</SYNC>
 		<CONS>INFO</CONS>
 		<DB>WARN</DB>
 		<API>INFO</API>
-		<P2P>DEBUG</P2P>
+		<P2P>INFO</P2P>
 	</log>
 </aion>
