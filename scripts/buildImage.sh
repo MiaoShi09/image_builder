@@ -1,7 +1,11 @@
 #!/bin/bash
 PACKAGE_NAME=$1
 echo $PACKAGE_NAME
-SYS_LIB="/usr/lib/x86_64-linux-gnu"
+SYS_LIB=(
+ "/usr/lib/x86_64-linux-gnu"
+ "/lib/x86_64-linux-gnu"
+)
+
 libs=(
  "libboost_filesystem.so.1.65.1"
  "libboost_program_options.so.1.65.1"
@@ -22,12 +26,20 @@ cp -r ../package/$PACKAGE_NAME executive/$PACKAGE_NAME
 for file in ${libs[@]}
 do
  echo copy $file
- if !(test -f $SYS_LIB/$file)
+ if !(test -f ${SYS_LIB[0]}/$file)
  then
-   echo Error: $file not found
-   exit 2
+   if !(test -f ${SYS_LIB[1]}/$file)
+   then
+    echo Error: $file not found
+    exit 2
+   else
+    echo find ${SYS_LIB[1]}/$file
+    cp ${SYS_LIB[1]}/$file libs/
+   fi
+ else
+  echo find ${SYS_LIB[0]}/$file
+  cp ${SYS_LIB[0]}/$file libs/
  fi
- cp $SYS_LIB/$file libs/
 done
 
 docker build --file Dockerfiles/Dockerfile_aionr_0.2 --build-arg PACKAGE_LOCATION=executive/$PACKAGE_NAME -t blockade/aionr .
