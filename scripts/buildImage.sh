@@ -13,7 +13,7 @@ libs=(
  "libboost_system.so.1.65.1"
  "libLLVM-4.0.so.1"
  "libedit.so.2"
-# "libbsd.so.0"
+ "libbsd.so.0"
 ## libraries need to be removed after merging with rf branch 190712
 # "libzmq.so.5"
 # "libsodium.so.23"
